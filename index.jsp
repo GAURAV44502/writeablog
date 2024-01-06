@@ -1,12 +1,4 @@
-<%-- 
-    Document   : login
-    Created on : Jan 6, 2024, 3:11:15 PM
-    Author     : gaura
---%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ page import="java.sql.*"%>
-<%@ page import="iam.writer.helper.*"%>
 <!doctype html>
 <html lang="en">
   <head>
@@ -22,7 +14,7 @@
     </style>
   </head>
   <body>
-      <%@include file="navbar.jsp" %>
+      
       <!-- crausal -->
      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
                 <ol class="carousel-indicators">
