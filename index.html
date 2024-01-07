@@ -9,45 +9,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Hello, world!</title>
+    <title>Home</title>
     
     </style>
   </head>
   <body>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#"><span class="fa fa-edit" style="font-size:36px"></span>WRITE A BLOG</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Social Media Links
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#"><span class="fa fa-instagram" style="font-size:24px;color:red"></span>    Instagram</a>
-            <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#"><span class="fa fa-facebook-square" style="font-size:24px;color:blue"></span>   Facebook</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#"><span class="fa fa-youtube-play" style="font-size:24px;color:red"></span>    Youtube</a>
-        </div>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link" href="#">Developers</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+      <%@include file="navbar.jsp" %>
       <!-- crausal -->
      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -78,7 +45,7 @@
  
       <!-- banner -->
       <div class="container-fluid p-0 m-0">
-          <div class="jumbotron text-white bg-primary" style="clip-path: polygon(30% 0%, 70% 0%, 99% 0, 100% 100%, 84% 94%, 55% 100%, 0 96%, 0 0);">
+          <div class="jumbotron text-white bg-primary" style="clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 100%, 91% 96%, 55% 100%, 0 96%, 0 0);">
               <div class="container">
   <h1 class="display-6">WELCOME TO WRITE A BLOG</h1>
   <p class="lead"> WRITER A BLOG is a platform for Novelist,Journalist,Poet,Content writerg,
@@ -88,8 +55,8 @@
                 You can always edit a bad page. You can’t edit a blank page.<br>
                 If there's a book that you want to read, but it hasn't been written yet, then you must write it.</p>
   <hr class="my-3">
-  <button class="btn btn-outline-light btn-lg "><span class="fa fa-user-circle fa-spin" style="font-size:22px"></span>   Login</button>
-  <button class="btn btn-outline-light btn-lg "><span class="fa fa-user-plus" style="font-size:22px"></span>   Sign Up</button>
+  <a class="btn btn-outline-light btn-lg " href="login_page.jsp"><span class="fa fa-user-circle fa-spin" style="font-size:22px"></span>   Login</a>
+  <a class="btn btn-outline-light btn-lg " href="signup_page.jsp"><span class="fa fa-user-plus" style="font-size:22px"></span>   Sign Up</a>
               </div>
 </div>
               
@@ -193,7 +160,7 @@
       <div class="container-fluid p-0 m-0">
           <div class="jumbotron text-white bg-primary mb-0" style="clip-path: polygon(31% 10%, 73% 11%, 100% 0, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 0);">
               <div class="container">
-  <h1 class="display-7">Thankyou</h1>
+  <h1 class="display-7">Post Your Thoughts</h1>
   
   
               </div>
