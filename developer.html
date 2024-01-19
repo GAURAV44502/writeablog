@@ -1,1 +1,360 @@
+<!doctype html>
+<html lang="en">
 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: cursive;
+            display: flex;
+            flex-direction: column;
+            margin: 0px;
+        }
+
+        header {
+            background-color: #ff006c;
+            display: flex;
+            align-items: center;
+            padding: 15px 0px;
+            font-weight: bold;
+        }
+
+        header ul {
+            list-style: none;
+            display: flex;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #logo {
+            margin: 0px auto;
+            font-size: 25px;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #menu li {
+            padding: 10px;
+        }
+
+        #icons li {
+            padding: 10px;
+        }
+
+        header a {
+            color: white;
+
+        }
+
+        #container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        #main {
+            display: flex;
+        }
+
+        aside {
+            flex: 0 0 20vw;
+            background-color: beige;
+            padding: 10px;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0px;
+        }
+
+        aside li:hover {
+            background-color: #ff006c;
+            margin-top: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        aside li a:hover {
+            color: white;
+        }
+
+        aside ul a {
+            color: #ff006c;
+            display: block;
+            padding: 10px;
+            font-size: 20px;
+            border-bottom: 2px solid gray;
+            border-radius: 0px;
+        }
+
+        aside ul li {
+            width: 90%;
+        }
+
+        #service-box {
+            background-color: white;
+            border: 3px solid;
+            border-color: #ff006c;
+            padding: 10px;
+            flex-basis: 32%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 25px;
+        }
+
+        #service-box img {
+            border: 2px solid;
+            border-color: #ff006c;
+            border-radius: 100px;
+            max-width: 110px;
+            max-height: 150px;
+
+        }
+
+        #service-box h3 {
+            margin: 5px 0px 10px 0px;
+        }
+
+        #service-box p {
+            margin: 0px 0px 10px;
+
+        }
+
+        footer {
+            background-color: #ff006c;
+            color: white;
+            text-align: center;
+            padding: 15px
+        }
+
+        article {
+            padding: 10px;
+        }
+
+        @media screen and (max-width:950px) {
+            #service-box {
+                flex-basis: 48%;
+
+            }
+
+            aside {
+                flex: 0 0 30vw;
+            }
+        }
+
+        @media screen and (max-width:650px) {
+            header {
+                flex-direction: column;
+            }
+
+            #logo {
+                font-size: 15px;
+            }
+
+            article {
+                order: -1;
+            }
+
+            #main {
+                flex-direction: column;
+            }
+
+            #container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            aside {
+                width: 70%;
+                align-self: center;
+            }
+        }
+
+        @media screen and (max-width:400px) {
+            aside {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav id="menu">
+            <ul>
+                <li><img src="five.jpg" style="width: 40px; height: 30px;"></li>
+
+            </ul>
+        </nav>
+        <div id="logo">
+            <h3>I AM A WRITER</h3>
+        </div>
+        <nav id="icons">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Signup</a></li>
+                <li><a href="">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main">
+
+        <aside>
+            <ul>
+                <li>
+                    <h3 style="background-color: #ff006c;color: white;text-align: center;">Link Section</h3>
+                </li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Sign Up</a></li>
+                <li><a href="">Login</a></li>
+
+            </ul>
+
+            <ul>
+                <li>
+                    <h3 style="background-color: #ff006c;color: white;text-align: center;margin-top: 350px;">
+                        Notification Section</h3>
+                </li>
+
+            </ul>
+        </aside>
+
+        <article>
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 img-fluid" style="height: 450px;" src="one.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" style="height: 450px;" src="three.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" style="height: 450px;" src="two.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <h3 style="margin-top: 40px;">Welcome To Our Website</h3>
+            <p>
+                I AM A WITER is a platform for Novelist,Journalist,Poet,Content writerg,Ghostwriters,
+                and Shayari writers.This platform allows you to post your writing skills.You can also
+                be a writer so sign-Up and post your talent.Share your thoughts.<br>
+                Start writing, no matter what. The water does not flow until the faucet is turned on.<br>
+                You can always edit a bad page. You can’t edit a blank page.<br>
+                If there's a book that you want to read, but it hasn't been written yet, then you must write it.
+            </p>
+
+            <h3 style="margin-top: 40px;margin-bottom: 30px;">Our Dream Is To Be Like -</h3>
+            <div id="container">
+                <div id="service-box">
+                    <div class="image">
+                        <img src="kumarvishwas.webp">
+                    </div>
+                    <div id="title">
+                        <h3>Dr.kumar Vishwas</h3>
+                    </div>
+                    <div id="info">
+                        <p>
+                            Kumar Vishwas is a poet who went beyond the stereotypical norms
+                            of 'Kavi Sammelan' or poetic functions and made it a performer's stage.
+                            He has become an icon among the youth of India. Dr. Kumar Vishwas was
+                            born on 10 February in a Brahmin family in Pilkhuwa, Uttar Pradesh.
+                            He obtained his school education from the Lala Ganga Sahay School, Pilkhuwa.
+                            He did his intermediate from Rajputana Regiment Inter College, Pilkhuwa.
+                            He completed his Masters and PhD in Hindi literature.
+                        </p>
+                    </div>
+
+                </div>
+                <div id="service-box">
+                    <div class="image">
+                        <img src="rahat.jpeg">
+                    </div>
+                    <div id="title">
+                        <h3>Dr. Rahat Indori</h3>
+                    </div>
+                    <div id="info">
+                        <p>
+                            Rahat Indori is a well-known Urdu shayar and lyrics writer.
+                            He was born in 1950 in Indore and did his basic education from there.
+                            He completed his MA in Urdu literature from Bhopal and achieved his PhD
+                            from Bhuj University of Madhya Pradesh. His childhood was a tough one as
+                            the family was going through a financial crisis, so he began to work as a
+                            sign-painter at the tender age of ten.Rahat took up a teacher’s job in Urdu
+                            literature at IK College, Indore and got engrossed in mushairas and began to
+                            get invitations from everywhere in India and abroad.
+                        </p>
+                    </div>
+
+                </div>
+                <div id="service-box">
+                    <div class="image">
+                        <img src="gulzar.jpg">
+                    </div>
+                    <div id="title">
+                        <h3>Gulzar</h3>
+                    </div>
+                    <div id="info">
+                        <p>
+                            Poet, novelist, songwriter, film scriptwriter, playwright, producer,
+                            dialogue writer, director, intellectual, and famous for his uniqueness
+                            and innovation in every field, Gulzar has donned more hats than one.
+                            Whether in poetry or prose, his distinct expression has helped bring about
+                            ever new aspects and emotions in the journey of life. He has been presented with
+                            a long, unending series of awards and accolades for him unparalleled contribution
+                            to the field of literature and Indian film industry.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+    </div>
+    <footer>
+        I AM A WRITER
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
